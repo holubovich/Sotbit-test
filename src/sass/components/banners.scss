@@ -1,0 +1,75 @@
+.banner__block {
+  background-color: rgb(235, 235, 235);
+  height: 200px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.banner__text {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background-color: white;
+  font-size: 14px;
+  font-weight: bold;
+  width: 150px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.banner__img {
+  background: no-repeat center center;
+  background-size: contain;
+  background-position: center;
+  padding: 30px 20px;
+  height: 100%;
+}
+
+.banner__stock {
+  height: 420px;
+  background-image: url("../../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: $grey;
+  position: relative;
+  padding: 35px;
+
+  .banner__stock__text {
+    position: absolute;
+    font-size: 14.4px;
+    padding: 272px 0 0 0;
+  }
+  .banner__hour-text {
+    height: 20px;
+    position: relative;
+  }
+  .banner__stock__hour {
+    position: absolute;
+    font-size: 12.48px;
+    font-weight: 600;
+  }
+  .banner__stock__min {
+    position: absolute;
+    display: block;
+    padding-left: 89px;
+    font-size: 12.48px;
+    font-weight: 600;
+    @media #{$tablet} {
+      padding-left: 65px;
+    }
+  }
+  .banner__stock__sec {
+    position: absolute;
+    padding-left: 175px;
+    font-size: 12.48px;
+    font-weight: 600;
+    @media #{$tablet} {
+      padding-left: 128px;
+    }
+  }
+}
+
+.flip-clock {
+  background-position-y: bottom;
+  background-size: contain;
+}

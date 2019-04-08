@@ -1,0 +1,25 @@
+$container-padding-x: 45px;
+$container-padding-x_mob: 25px;
+$container-max-width: (1340px + $container-padding-x*2);
+
+$grid-gutter: 30px;
+
+$desktop: '(min-width: 992px)';
+$tablet: '(min-width: 768px) and (max-width: 991px)';
+$tablet-mobile: '(max-width: 991px)';
+$mobile: '(max-width: 767px)';
+
+//colors
+$black: #0b0b0b;
+$grey: #ebebeb;
+$more-grey: #807f7f;
+$dark-grey: #4a4b49;
+$red: #fb0040;
+$green: #00b02a;
+$yellow: #ffb800;
+
+//SLICK
+$slick-dot-color: white;
+$slick-dot-size: 30px;
+
+

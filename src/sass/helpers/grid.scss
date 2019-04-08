@@ -1,0 +1,98 @@
+.container {
+  width: $container-max-width;
+  max-width: 100%;
+  margin: 40px auto;
+  padding-left: $container-padding-x;
+  padding-right: $container-padding-x;
+  @media #{$mobile} {
+    padding-left: $container-padding-x_mob;
+    padding-right: $container-padding-x_mob;
+    margin: 0 0 30px 0;
+
+  }
+}
+
+.row {
+  margin-left: -$grid-gutter/2;
+  margin-right: -$grid-gutter/2;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  position: relative;
+  width: 100%;
+  padding-left: $grid-gutter/2;
+  padding-right: $grid-gutter/2;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.col-1 {
+  width: (100%/12*1);
+}
+
+.col-2 {
+  width: (100%/12*2);
+}
+
+.col-3 {
+  width: (100%/12*3);
+}
+
+.col-4 {
+  width: (100%/12*4);
+}
+
+.col-5 {
+  width: (100%/12*5);
+}
+
+.col-6 {
+  width: (100%/12*6);
+}
+
+.col-7 {
+  width: (100%/12*7);
+}
+
+.col-8 {
+  width: (100%/12*8);
+}
+
+.col-9 {
+  width: (100%/12*9);
+}
+
+.col-10 {
+  width: (100%/12*10);
+}
+
+.col-11 {
+  width: (100%/12*11);
+}
+
+.col-12 {
+  width: (100%/12*12);
+}
+
+.visible {
+  display: block !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hidden-desktop {
+  @media #{$desktop} {
+    display: none !important;
+  }
+}
+
+.visible-desktop {
+  @media #{$tablet-mobile} {
+    display: none !important;
+  }
+}

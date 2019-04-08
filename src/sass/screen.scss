@@ -1,0 +1,65 @@
+@import "libs/slick";
+@import "libs/slick-theme";
+@import "helpers/_variables";
+@import "helpers/grid";
+@import "libs/flipclock";
+@import "components/banners";
+@import "components/sliders";
+@import "components/buttons";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6;
+}
+
+h1 {
+  @media #{$mobile}{
+    font-size: 18px;
+    text-align: center;
+    width: 263px;
+    padding-top: 60px;
+    padding-bottom: 25px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+
+  @media #{$mobile}{
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .footer__logo {
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    height: 28px;
+    width: 100px;
+  }
+
+  .footer__text {
+    font-size: 13px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: $dark-grey;
+  }
+}
+
+//.flip-clock-wrapper ul li a div div.inn { font-size: 50px;line-height: 1;}
