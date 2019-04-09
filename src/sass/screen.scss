@@ -2,7 +2,6 @@
 @import "libs/slick-theme";
 @import "helpers/_variables";
 @import "helpers/grid";
-@import "libs/flipclock";
 @import "components/banners";
 @import "components/sliders";
 @import "components/buttons";
@@ -35,6 +34,15 @@ h1 {
     padding-bottom: 25px;
   }
 }
+.megatimer{
+  padding-top: 295px;
+
+}
+.timer-separator{
+  color: $black!important;
+  font-size: 30px !important;
+}
+
 
 .footer {
   display: flex;
